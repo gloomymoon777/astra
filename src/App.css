@@ -225,7 +225,8 @@ body, button, a, input {
   align-items: center;
   justify-content: center;
   background: transparent;
-  border: 1px solid #dce8a5;
+  --bgcolor: #dce8a5;
+  border: 1px solid var(--bgcolor);
   padding: 0;;
   z-index: 5;
 }
@@ -234,7 +235,12 @@ body, button, a, input {
   display: block;
   width: 8px;
   height: 8px;
-  background: #dce8a5
+  background: var(--bgcolor);
+
+}
+
+.window-close:hover {
+  --bgcolor: #e8c0df;
 }
 
 .window-label {

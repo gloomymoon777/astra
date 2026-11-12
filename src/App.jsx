@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import Cursor from './Cursor'
 import Window from './Window'
 import Pomodoro from './Pomodoro'
+import Tasks from './Tasks'
+import Ambience from './Ambience'
 import './App.css'
 
 import backgroundimg from './assets/backgrounds/herta-station-1.jpg'
@@ -114,11 +116,15 @@ function App() {
       )}
 
       {openWindows.todo && (
-        <Window title="TASKS.TXT" initialPosition={{x: 550, y: 220}} onClose={() => toggleWindow('todo')}><p>coming soon</p></Window>
+        <Window title="TASKS.TXT" initialPosition={{x: 550, y: 220}} onClose={() => toggleWindow('todo')}>
+          <Tasks />
+        </Window>
       )}
 
       {openWindows.ambience && (
-        <Window title="AMBIENCE.MP3" initialPosition={{x: 400, y: 400}} onClose={() => toggleWindow('ambience')}><p>coming soon</p></Window>
+        <Window title="AMBIENCE.MP3" initialPosition={{x: 400, y: 400}} onClose={() => toggleWindow('ambience')}>
+          <Ambience />
+        </Window>
       )}
 
       <footer className="music">

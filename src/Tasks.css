@@ -1,0 +1,155 @@
+
+.tasks {
+    width: 290px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    gap: 5px;
+}
+
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 10px;
+}
+
+.tasks-filters {
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.642);
+    background: none;
+    border: none;
+}
+
+.tasks-filters button {
+    font-family: inherit;
+    border: none;
+    background: transparent;
+    color: inherit;
+    border-bottom: 1px solid rgba(255,255,255,0.642);
+}
+.tasks-filters button.hover {
+    color: white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.tasks-filters button.selected {
+    color: #ffffff;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.taskprogress {
+    width: 60px;
+    align-items: center;
+}
+
+
+.tasks-progress-track {
+    flex: 1;
+    width: 100%;
+    height: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.769);
+    padding: 2px;
+    overflow: hidden;
+}
+
+.tasks-progress-fill {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.769);
+    transition: width 0.2s ease;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 80px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.task-checkbox {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.823);
+    background: transparent;
+}
+
+.task-checkbox.checked {
+    border-color: #dce8a5;
+}
+
+.check {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #dce8a5;
+    transform: translateX(-3.5px);
+}
+
+.task-completed {
+    color: rgba(255,255,255, 0.35);
+    text-decoration: line-through;
+}
+
+.task-delete {
+    margin-left: auto;
+    border: none;
+    background: transparent;
+    color: rgba(255,255,255,0.35);
+    font-size: 16px;
+    cursor: 'close'
+}
+
+.task-delete:hover{
+    color: #e8c0df;
+}
+
+.tasks-input {
+    display: flex;
+    align-items: center;
+    border-top: 1pz solid rgba(255,255,255,0.25);
+    padding-top: 10px;
+}
+
+.tasks-input img{
+    width: 30px;
+    margin: 0;
+    transform: translateX(-7px);
+}
+
+.tasks-input input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.tasks-input input::placeholder{
+    color: rgba(255, 255, 255, 0.602);
+}
+
+.tasks-input button {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.35);
+    color: white;
+    padding: 6px 10px;
+    font-family: inherit;
+    font-size: 9px;
+    cursor: pointer;
+}
