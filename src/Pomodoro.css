@@ -1,0 +1,154 @@
+
+
+.pomodoro {
+    width: 340px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.pomo-display{
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.pomo-dial {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transform: rotate(0deg);
+}
+
+.dialtrack, .dialprogress {
+    fill: none;
+    stroke-width: 2;
+}
+.dialtrack {
+    stroke: rgba(255, 255, 255, 0.12);
+}
+.dialprogress {
+    stroke: #e6e6e6;
+    stroke-linecap: butt;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.5s linear;
+}
+
+.dial-ring {
+    fill: none;
+    stroke: rgba(255,255,255,0.22);
+    stroke-width: 0.9;
+}
+.dial-ring.outer{
+    stroke: rgba(255,255,255,0.38);
+}
+.dial-ring.inner{
+    stroke: rgba(255,255,255,0.4);
+    stroke-dasharray: 2 4;
+}
+
+.dial-crosshair {
+    stroke: rgba(255,255,255,0.8);
+    stroke-width: 0.6;
+}
+
+.dial-tick {
+    stroke: rgba(255,255,255,0.32);
+    stroke-width: 0.8;
+}
+
+.dial-tick.major{
+    stroke:rgba(255, 255,255, 0.85);
+    stroke-width: 1.5;
+}
+
+.dial-number {
+    fill: rgba(255,255,255,0.4);
+    font-family: monospace; 
+    font-size: 4px;
+    letter-spacing: 0.5px;
+}
+
+.target-circle {
+    fill: none;
+    stroke: rgba(255,255,255,0.65);
+    stroke-width: 0.8;
+}
+.target-dot {
+    fill: #e8c0df;
+}
+
+.pomo-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.pomo-time {
+    transform: translateY(-16.5px);
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-variant-numeric: tabular-nums;
+}
+
+.pomo-status {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.739);
+}
+
+.pomo-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.pomo-actions {
+    display: flex;
+}
+
+.pomo-bottom button {
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.642);
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.642);
+}
+
+.pomo-bottom button:hover {
+    color: rgba(255, 255, 255, 0.881);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.pomo-toggle {
+    display: flex;
+}
+
+.pomo-toggle button {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(255,255,255,0.642);
+}
+.pomo-toggle button.hover {
+    color: white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.pomo-toggle button.selected {
+    color: #ffffff;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
