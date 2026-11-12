@@ -1,16 +1,11 @@
-# React + Vite
+# README
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+hii this is a star rail inspired productivity tool so i can pretend to be an astronaut while working. this was made for hack club snowglobe! 
+i learned a lot of css and it was really frustrating but i think i got better. this was also the first project where i made different react classes and pieced them all together, and it's SO much easier.. guess who's never going back to raw html css and js (me)
 
-Currently, two official plugins are available:
+anyways this is how she turned out and im so happy with how the futuristic effects look? i lowkey excavated pinterest for sci-fi futuristic frutiger aero buzzword buzzword buzzword references so im glad that time wasnt wasted <3 yippee
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+<img width="1512" height="817" alt="Screenshot 2026-11-11 at 10 47 30 PM" src="https://github.com/user-attachments/assets/42345a3e-8586-4a63-b16c-a6e1d4552dbf" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
